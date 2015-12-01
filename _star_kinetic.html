@@ -12,19 +12,6 @@ body { background-color: #ffffff; }
 .clearfix:after  { content: "."; visibility: hidden; display: block; height: 0; clear: both; } 
 table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } table th { margin:0 !important; padding:0 !important; vertical-align:top; }
 
-*[class].hide { display: none !important; } *[class].block { display: block !important; } *[class].automrgn { margin: 0 auto !important; }
-*[class].left { text-align: left !important; } *[class].center { text-align: center !important; } *[class].right { text-align: right !important; }
-*[class].lfloat { float: left !important; } *[class].rfloat { float: right !important; }
-*[class].sans_bg { background: none !important; } *[class].abs { position: absolute !important; } *[class].rel { position: relative !important; }
-
-*[class].table { display: table !important; } *[class].iblock { display: inline-block !important; } *[class].valign { display: table-cell !important; vertical-align: middle !important; }
-*[class].up { display: table-header-group !important; } *[class].down { display: table-footer-group !important; }
-
-*[class].hide { display: none !important; } 
-*[class].showme { display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: inherit !important; line-height: auto !important; margin-top: 0px !important; visibility: inherit !important; }
-		
-*[class].w320 { width:320px !important; }
-*[class].h160 { height:160px !important; }
 
 
 .button {
@@ -50,14 +37,10 @@ cursor:pointer;
 #outershell { overflow:hidden; display:block; width:600px; height:600px; position:relative; }
 
 .slide1-content, .slide2-content, .slide3-content, .slide4-content, .slide5-content, .slide6-content, .slide7-content {
-display: block;
-position: absolute;
-top: 0px;
-left: 0;
-width: 600px;
-height: 600px;
-font-size:40px;
-line-height:40px;
+display: block; position: absolute;
+top: 0px; left: 0;
+width: 600px; height: 600px;
+font-size:40px; line-height:40px;
 }
 
 .slide1 { top: 10px; left: 10px;}
@@ -68,22 +51,57 @@ line-height:40px;
 
 .slide2 { top: 60px; left: 10px;}
 .slide2:hover { background-color: #fff;}
-.slide2-content {left: 600px; background:#903; }
+.slide2-content {left: 600px; background:#09c; }
 #slide-2:checked + table .slide2 { background:#F90; }
 #slide-2:checked + table .filmstrip { left: -600px !important; }
 
 .slide3 { top: 110px; left: 10px;}
 .slide3:hover { background-color: #fff;}
-.slide3-content {left: 1200px; background:#903; }
+.slide3-content {left: 1200px; background:#cc9; }
 #slide-3:checked + table .slide3 { background:#F90; }
 #slide-3:checked + table .filmstrip { left: -1200px !important; }
 
 .slide4 { top: 160px; left: 10px;}
 .slide4:hover { background-color: #fff;}
-.slide4-content {left: 1800px; background:#903; }
+.slide4-content {left: 1800px; background:#399; }
 #slide-4:checked ~ .slide4 { background:#F90; }
 #slide-4:checked + table .filmstrip { left: -1800px !important; }
 
+@media only screen and (max-width: 640px) { 
+
+*[class].w320 { width:320px !important; }
+*[class].w300 { width:300px !important; }
+*[class].h300 { height:300px !important; }
+
+.slide1-content, .slide2-content, .slide3-content, .slide4-content, .slide5-content, .slide6-content, .slide7-content {
+width: 320px; height: 320px;
+font-size:40px; line-height:40px;
+}
+
+.slide1 { top: 10px; left: 10px;}
+.slide1:hover { background-color: #fff;}
+.slide1-content {left: 0; background:#903; }
+#slide-1:checked + table .slide1 { background:#F90; }
+#slide-1:checked + table .filmstrip { left: 0px !important; }
+
+.slide2 { top: 60px; left: 10px;}
+.slide2:hover { background-color: #fff;}
+.slide2-content {left: 320px; background:#09c; }
+#slide-2:checked + table .slide2 { background:#F90; }
+#slide-2:checked + table .filmstrip { left: -320px !important; }
+
+.slide3 { top: 110px; left: 10px;}
+.slide3:hover { background-color: #fff;}
+.slide3-content {left: 640px; background:#cc9; }
+#slide-3:checked + table .slide3 { background:#F90; }
+#slide-3:checked + table .filmstrip { left: -640px !important; }
+
+.slide4 { top: 160px; left: 10px;}
+.slide4:hover { background-color: #fff;}
+.slide4-content {left: 960px; background:#399; }
+#slide-4:checked ~ .slide4 { background:#F90; }
+#slide-4:checked + table .filmstrip { left: -960px !important; }
+}
 
 </style>
 </head>
@@ -96,12 +114,12 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
 <![endif]-->
 
 <!-- open outershell -->
-<table id="outershell" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+<table id="outershell" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="w320">
 <tr>
 <td>
 
 <!-- open innershell -->
-<table class="innershell" width="600" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0">
+<table width="600" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="innershell w320">
 <tr>
 <td valign="top" style="line-height:1px;">
 
@@ -144,9 +162,9 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
 
       <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
       
-      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0" class="w300">
        <tr>
-        <td height="580" align="center" valign="middle">
+        <td height="580" align="center" valign="middle" class="h300">
         
          <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
           1
@@ -163,9 +181,9 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
 
       <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
       
-      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0" class="w300">
        <tr>
-        <td height="580" align="center" valign="middle">
+        <td height="580" align="center" valign="middle" class="h300">
         
          <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
           2
@@ -182,9 +200,9 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
 
       <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
       
-      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0" class="w300">
        <tr>
-        <td height="580" align="center" valign="middle">
+        <td height="580" align="center" valign="middle" class="h300">
         
          <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
           3
@@ -201,9 +219,9 @@ tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
 
       <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
       
-      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0" class="w300">
        <tr>
-        <td height="580" align="center" valign="middle">
+        <td height="580" align="center" valign="middle" class="h300">
         
          <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
           4
