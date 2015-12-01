@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><head><meta name="viewport" content="width=device-width">
+
+
+<style>
+
+html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+body { background-color: #ffffff; } 
+.ios a { color:#ffffff; text-decoration:none; } a { outline:0; } 
+.ReadMsgBody     { width: 100%; } 
+.ExternalClass   { width: 100%; } 
+.ExternalClass * { line-height: 100%; } 
+.clearfix:after  { content: "."; visibility: hidden; display: block; height: 0; clear: both; } 
+table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } table th { margin:0 !important; padding:0 !important; vertical-align:top; }
+
+*[class].hide { display: none !important; } *[class].block { display: block !important; } *[class].automrgn { margin: 0 auto !important; }
+*[class].left { text-align: left !important; } *[class].center { text-align: center !important; } *[class].right { text-align: right !important; }
+*[class].lfloat { float: left !important; } *[class].rfloat { float: right !important; }
+*[class].sans_bg { background: none !important; } *[class].abs { position: absolute !important; } *[class].rel { position: relative !important; }
+
+*[class].table { display: table !important; } *[class].iblock { display: inline-block !important; } *[class].valign { display: table-cell !important; vertical-align: middle !important; }
+*[class].up { display: table-header-group !important; } *[class].down { display: table-footer-group !important; }
+
+*[class].hide { display: none !important; } 
+*[class].showme { display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: inherit !important; line-height: auto !important; margin-top: 0px !important; visibility: inherit !important; }
+		
+*[class].w320 { width:320px !important; }
+*[class].h160 { height:160px !important; }
+
+
+.button {
+visibility: visible !important;
+max-height: 50px !important;
+width: 50px !important;
+padding:7px 0px 6px 0px;
+display: block !important;
+position: absolute !important;
+background:#000;
+z-index: 7;
+box-sizing: content-box;
+font-weight:bold;
+cursor:pointer;
+-webkit-transition: 0.1s ease-in;
+-moz-transition: 0.1s ease-in;
+-ms-transition: 0.1s ease-in;
+-o-transition: 0.1s ease-in;
+}
+
+.filmstrip { position: relative; transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; }
+
+#outershell { overflow:hidden; display:block; width:600px; height:600px; position:relative; }
+
+.slide1-content, .slide2-content, .slide3-content, .slide4-content, .slide5-content, .slide6-content, .slide7-content {
+display: block;
+position: absolute;
+top: 0px;
+left: 0;
+width: 600px;
+height: 600px;
+font-size:40px;
+line-height:40px;
+}
+
+.slide1 { top: 10px; left: 10px;}
+.slide1:hover { background-color: #fff;}
+.slide1-content {left: 0; background:#903; }
+#slide-1:checked + table .slide1 { background:#F90; }
+#slide-1:checked + table .filmstrip { left: 0px !important; }
+
+.slide2 { top: 60px; left: 10px;}
+.slide2:hover { background-color: #fff;}
+.slide2-content {left: 600px; background:#903; }
+#slide-2:checked + table .slide2 { background:#F90; }
+#slide-2:checked + table .filmstrip { left: -600px !important; }
+
+.slide3 { top: 110px; left: 10px;}
+.slide3:hover { background-color: #fff;}
+.slide3-content {left: 1200px; background:#903; }
+#slide-3:checked + table .slide3 { background:#F90; }
+#slide-3:checked + table .filmstrip { left: -1200px !important; }
+
+.slide4 { top: 160px; left: 10px;}
+.slide4:hover { background-color: #fff;}
+.slide4-content {left: 1800px; background:#903; }
+#slide-4:checked ~ .slide4 { background:#F90; }
+#slide-4:checked + table .filmstrip { left: -1800px !important; }
+
+
+</style>
+</head>
+<body style="margin:0; padding:0;">
+
+<!--[if gte mso 15]>
+<style type="text/css" media="all">
+tr { font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px; }
+</style>
+<![endif]-->
+
+<!-- open outershell -->
+<table id="outershell" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td>
+
+<!-- open innershell -->
+<table class="innershell" width="600" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" style="line-height:1px;">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="line-height:1px; font-size:0px;">
+<!--[if mso]><p style="display: none;"><![endif]-->
+<input class="yahoo" type="radio" name="action" id="slide-1" checked="checked" style="display: none!important; max-height: 0; visibility: hidden;" />
+<!--[if mso]></p><![endif]-->
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="line-height:1px; font-size:0px;">
+<!--[if mso]><p style="display: none;"><![endif]-->
+<input class="yahoo" type="radio" name="action" id="slide-2" style="display: none!important; max-height: 0; visibility: hidden;" />
+<!--[if mso]></p><![endif]-->
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="line-height:1px; font-size:0px;">
+<!--[if mso]><p style="display: none;"><![endif]-->
+<input class="yahoo" type="radio" name="action" id="slide-3" style="display: none!important; max-height: 0; visibility: hidden;" />
+<!--[if mso]></p><![endif]-->
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="line-height:1px; font-size:0px;">
+<!--[if mso]><p style="display: none;"><![endif]-->
+<input class="yahoo" type="radio" name="action" id="slide-4" style="display: none!important; max-height: 0; visibility: hidden;" />
+<!--[if mso]></p><![endif]-->
+
+<!-- openslides -->
+<table border="0" cellpadding="0" cellspacing="0">
+ <tr>
+  <td>
+  
+   <table class="filmstrip" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+     <td class="slide1-content">
+
+      <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
+      
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+       <tr>
+        <td height="580" align="center" valign="middle">
+        
+         <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
+          1
+         </div>
+        
+        </td>
+       </tr>
+      </table>
+     
+     </td>
+    </tr>
+    <tr>
+     <td class="slide2-content">
+
+      <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
+      
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+       <tr>
+        <td height="580" align="center" valign="middle">
+        
+         <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
+          2
+         </div>
+        
+        </td>
+       </tr>
+      </table>
+     
+     </td>
+    </tr>
+    <tr>
+     <td class="slide3-content">
+
+      <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
+      
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+       <tr>
+        <td height="580" align="center" valign="middle">
+        
+         <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
+          3
+         </div>
+        
+        </td>
+       </tr>
+      </table>
+     
+     </td>
+    </tr>
+    <tr>
+     <td class="slide4-content">
+
+      <table cellspacing="0" cellpadding="0" border="0"><tr><td height="10"></td></tr></table>    
+      
+      <table width="580" cellspacing="0" cellpadding="0" align="center" border="0">
+       <tr>
+        <td height="580" align="center" valign="middle">
+        
+         <div style="font-weight:bold; font-size:33px; line-height:33px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
+          4
+         </div>
+        
+        </td>
+       </tr>
+      </table>
+     
+     </td>
+    </tr>
+   </table>
+  
+  </td>
+ </tr>
+</table>
+<!-- closeslides -->
+
+<label class="button slide1" for="slide-1" style="display: none; max-height: 0; visibility: hidden; font-size:1px; line-height:1px;">
+</label>
+
+<label class="button slide2" for="slide-2" style="display: none; max-height: 0; visibility: hidden; font-size:1px; line-height:1px;">
+</label>
+
+<label class="button slide3" for="slide-3" style="display: none; max-height: 0; visibility: hidden; font-size:1px; line-height:1px;">
+</label>
+
+<label class="button slide4" for="slide-4" style="display: none; max-height: 0; visibility: hidden; font-size:1px; line-height:1px;">
+</label>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+<!-- close innershell -->
+
+</td>
+</tr>
+</table>
+<!-- close outershell -->
+
+
+<!-- prevent MODIFIED RENDERING IOS GMAIL APP  -->
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff;">
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</div>
+
+
+
+
+</body>
+</html>
